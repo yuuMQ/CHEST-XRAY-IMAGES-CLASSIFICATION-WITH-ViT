@@ -284,6 +284,11 @@ Python train.py --root PATH/TO/YOUR/DATASET --early_stopping number_epochs --sav
 - Whenever you train, their will be `best_model.pt` and `last_model.pt` in save_models folder, you can continue your training step with last_model.pt and use best_model.pt to test with your test_folder
 - How to continue Training: `--checkpoint PATH/TO/last_model.pt`
 
+## MY CHECKPOINT:
+!["Link to my checkpoint file"](https://drive.google.com/file/d/1-TP8m3k9XHrC5ZUyVrEUKjJH-esgB8vy/view?usp=sharing)
+
+---
+
 # REFERENCES
-- Thank You google-research
+- Thank you google-research
 - Link google-research projects: https://github.com/google-research
