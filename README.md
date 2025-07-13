@@ -285,7 +285,7 @@ Python train.py --root PATH/TO/YOUR/DATASET --early_stopping number_epochs --sav
 - How to continue Training: `--checkpoint PATH/TO/last_model.pt`
 
 ## MY CHECKPOINT:
-!["Link to my checkpoint file"](https://drive.google.com/file/d/1-TP8m3k9XHrC5ZUyVrEUKjJH-esgB8vy/view?usp=sharing)
+[Link to my checkpoint file](https://drive.google.com/file/d/1-TP8m3k9XHrC5ZUyVrEUKjJH-esgB8vy/view?usp=sharing)
 
 ---
 
