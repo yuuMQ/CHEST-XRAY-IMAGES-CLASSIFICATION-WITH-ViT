@@ -104,7 +104,7 @@ Viral_Pneumonia       0.98      0.96      0.97       269
 
 ---
 ### Evaluation
-- The models perform seem very well, average accuracy: `0.95` - `0.96`.
+- The models perform very well, average accuracy: `0.95` - `0.96`.
 - COVID: Precision is very high: `0.98` `0.99`.
 - Lung Opacity: Precision: `0.95`, Recall: `0.91`. The model may predict wrong some cases.
 - Normal: High Recall `0.97`.
@@ -126,7 +126,15 @@ Viral_Pneumonia       0.98      0.96      0.97       269
 ---
 
 ## HOW TO USE:
-### 1. Prepare your dataset
+### 1. Prepare Environment
+- clone this repo
+- activate your conda env or create new anaconda env
+- then install:
+```text
+pip install -r requirements.txt
+```
+
+### 2. Prepare your dataset
 - If your dataset doesn't have train, test, valid, you can use create_dataset.py to format dataset as below:
 ```text
 data
@@ -149,7 +157,7 @@ data
 └── ...        
 ```
 #### source format: https://github.com/HealthX-Lab/MedCLIP-SAMv2
-- If you doesn't use masks for segmentation project, you can config in create_dataset.py
+- If you doesn't use masks for segmentation project, you can change in create_dataset.py
 ```text
     if not os.path.exists(all_images_path):
         os.makedirs(all_images_path)
@@ -206,7 +214,7 @@ if __name__ == '__main__':
 ```
 
 ## 2. Training:
-- If you want to finetune ViT-b16 model. you can config the dataset.py
+- If you want to fine-tune ViT-b16 model. you can config the dataset.py
 ```text
 class COVID19_Classification_Dataset(Dataset):
     def __init__(self, root, train=True, transform=None):
@@ -276,6 +284,6 @@ Python train.py --root PATH/TO/YOUR/DATASET --early_stopping number_epochs --sav
 - Whenever you train, their will be `best_model.pt` and `last_model.pt` in save_models folder, you can continue your training step with last_model.pt and use best_model.pt to test with your test_folder
 - How to continue Training: `--checkpoint PATH/TO/last_model.pt`
 
-# REFENCES
+# REFERENCES
 - Thank You google-research
 - Link google-research projects: https://github.com/google-research
