@@ -10,7 +10,7 @@
 - Using ViT-B16 model to classify chest x-ray
 - Link repository: 
   - https://github.com/google-research/vision_transformer
-### Pipeline của model:
+### Model Construction:
 ![ViT pipeline](./classification/ViT_pipeline.png)
 
 ---
